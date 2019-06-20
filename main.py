@@ -37,5 +37,5 @@ service = discovery.build('gmail', 'v1', http=http)
 import send_mail
 
 sendInst = send_mail.send_mail(service)
-message = sendInst.create_message_with_attachment('rahul.kumar25011999@gmail.com','rahul.kumar25011999@gmail.com','Testing 123','Hi there, This is a test from Python!','image.jpg')
+message = sendInst.create_message_with_attachment('from(email id )','to (email id)','Testing 123 (comment data)','Hi there, This is a test from Python!','image.jpg')
 sendInst.send_message('me',message)
